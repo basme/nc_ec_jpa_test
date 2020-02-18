@@ -20,7 +20,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @ComponentScan(basePackages = {"com.netcracker"})
-@EnableJpaRepositories(basePackages = {"com.netcracker.ec.jpa.test.repo"})
+@EnableJpaRepositories(basePackages = {"com.netcracker.ec.jpa.test.service.repo"})
 public class HibernateConfig {
 
     @Bean
@@ -41,9 +41,9 @@ public class HibernateConfig {
     public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://localhost:5555/daba_test");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/postgres");
         dataSource.setUsername("postgres");
-        dataSource.setPassword("postgres");
+        dataSource.setPassword("Atapora");
         return dataSource;
     }
 
