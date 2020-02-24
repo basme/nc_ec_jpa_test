@@ -11,8 +11,6 @@ import java.util.UUID;
 @Data
 public class StrangeEntity {
 
-    // TODO remove ID
-    @Id
     @GeneratedValue
     private UUID id;
 
