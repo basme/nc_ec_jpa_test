@@ -7,9 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 @RequiredArgsConstructor
 public class TestController {
+
 
     @RequestMapping(value = "/test", method = RequestMethod.POST)
     public ResponseEntity test() {
